@@ -1,4 +1,4 @@
-﻿.idea/
+.idea/
 *.ipr
 *.iws
 *.iml
@@ -6,6 +6,5 @@ out/
 .idea_modules/
 atlassian-ide-plugin.xml
 com_crashlytics_export_strings.xml
-result.txt
-log_file.log
-output.html
+outputData
+outputData/
