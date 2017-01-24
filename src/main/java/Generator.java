@@ -80,7 +80,11 @@ public class Generator {
                             }
                         }
                     }
-                    out.print("\n");
+
+                    if(i != countGraphs - 1)
+                    {
+                        out.print("\n");
+                    }
 
                 }
             }
@@ -158,7 +162,6 @@ public class Generator {
                 {
                     double random = Math.random();
                     int rnd = (int)Math.round(random);
-                    System.out.println(rnd);
                     resultMatrix[i][j] = rnd;
                     resultMatrix[j][i] = rnd;
                 }
