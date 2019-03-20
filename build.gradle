@@ -15,10 +15,10 @@ apply plugin: 'com.bmuschko.docker-remote-api'
 import com.bmuschko.gradle.docker.tasks.image.*
 
  task createDockerfile(type: Dockerfile)  {
-     destFile = project.file('/home/root123/Downloads/GeneratorTestGraphs-master/Dockerfile')
+     destFile = project.file('Dockerfile')
      from 'openjdk:8'
-     addFile("GeneratorTestGraphs-master.jar", "//home/root123/Downloads/GeneratorTestGraphs-master/build/libs/GeneratorTestGraphs-master.jar")
-     defaultCommand("java", "-Dapp.home=/home/root123/Downloads/GeneratorTestGraphs-master/", "-jar", "/home/root123/Downloads/GeneratorTestGraphs-master/build/libs/GeneratorTestGraphs-master.jar")
+     addFile("GeneratorTestGraphs.jar", "build/libs/GeneratorTestGraphs.jar")
+     defaultCommand("java", "-Dapp.home=/", "-jar", "build/libs/GeneratorTestGraphs.jar")
 }
 
 
